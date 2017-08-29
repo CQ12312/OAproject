@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+#header{
+	background:#577294;
+	width:100%;
+	height: 85px;
+	position: relative;
+}
+#header .logo{
+	height: 100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+#header h3{
+	font-size: 22px;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	line-height: 85px;
+}
+#header .search{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	align-content: flex-end;
+}
+#header .search .form-inline{
+	width: 100%;
+}
+/*搜索*/
+.a-search{
+	position: absolute;
+	top: 35%;
+	right: 30px;
+	width: 17%;
+	height: 40%;
+	background: #6884a7;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	padding-left: 7px;
+	color: #fff;
+}
+.head_top{
+
+}
+.chooses{
+	padding: 10px 0;
+	background-color: #415676;
+}
+.choose_left dl{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 22px;
+}
+.choose_left dl dt{
+	float: left;
+	color: #FFFFFF;
+	width: 14%;
+	padding-left: 2%;
+}
+.choose_left dl dd,.choose_left dl dt{
+	float: left;
+	text-align: left;
+	/*padding: 3px 15px;*/
+	border-radius: 6px;
+}
+.choose_left dl dd{
+	text-align: center;
+	/*margin-right: 10px;*/
+	width: 16.66666%;
+}
+.choose_left dl dd a{
+	color: #849ec2;
+	border-radius: 4px;
+	padding: 3px 12px;
+}
+.choose_left dl dd a.active{
+	border: 1px solid #5dddd2;
+	color: #5dddd2;
+}
+.choose_left .apply{
+	padding-bottom: 2%;
+}
+.others{
+	position: relative;
+}
+.dorpdown_choose{
+	position: absolute;
+	right: -20px;
+	top: 0;
+}
+.dorpdown_choose .caret{
+	color: #849ec2;
+}
+.serach{
+	position: relative;
+	float: right;
+	width: 20%;
+}
+.a-search{
+	position: absolute;
+}
+.collect{
+	/*width: 10%;*/
+
+}
+.collect_cont{
+	/*width: 80%;*/
+	padding: 10px;
+	background-color: #53698a ;
+	margin: 0 auto;
+	border: 1px solid #415676;
+	font-size: 12px;
+	border-radius: 6px;
+}
+.collect_cont p{
+	color: #b7c6dd;
+	margin-bottom: 0;
+
+}
+#total_Rmb{
+	font-size: 14px;
+	color: #fff;
+}
+.buttons{
+	margin-top: 5px;
+}
+.total_rmb strong{
+	font-size: 14px;
+	text-align: right;
+}
+.collect_left, .collect_right{
+	padding-left: 0;
+}
+.rmb{
+	/*float: right;*/
+}
+.buttons .btn{
+	width: 49%;
+	padding:5px 0;
+	color: #fff;
+	border: 0;
+}
+.consent{
+	background: #86a1b6;
+}
+.reject{
+background-color: #38aba2;
+}
+
+.search{
+	text-align: right;
+}

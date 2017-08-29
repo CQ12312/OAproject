@@ -3,13 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.dataTables.css">
+    <link rel="stylesheet" href="../css/dataTables.material.css">
+    <link rel="stylesheet" href="../css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/tables.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../css/index2.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
+<!--    顶部  -->
+<div id="header" class="clearfix">
+    <div class="logo col-lg-1 col-md-1">
+        <img src="../img/pic2.png" alt="" col-lg-1>
+    </div>
+   <h3 class="col-lg-3 col-md-3"> <span>华彬集团资金审批汇总</span></h3>
+    <div class="search col-lg-8 col-md-8">
+        <form class="form-inline">
+            <div class="form-group">
+
+                <input type="email" class="form-control searchs" id="exampleInputEmail1" placeholder="请输入搜索内容...">
+            </div>
+            <!--<button type="submit" class="btn btn-primary">搜索</button>-->
+        </form>
+    </div>
+
+</div>
+<div class="chooses clearfix">
+    <div class="choose_left col-lg-7 col-md-7">
+        <dl class="apply">
+            <dt>申请单位</dt>
+            <dd class="all"><a href="javascript:;"  class="active">全部</a></dd>
+            <!--<dd ><a href="javascript:;">华彬庄园</a></dd>-->
+            <!--<dd><a href="javascript:;">北京百仕欣</a></dd>-->
+            <!--<dd><a href="javascript:;">湖北红牛基地</a></dd>-->
+            <!--<dd class="others">-->
+                <!--<a href="javascript:;">其他</a>-->
+                <!--<div class="dorpdown_choose"  style="width: 100%;height: 20px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+                    <!--<span class="caret"></span>-->
+                <!--</div>-->
+                <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+                    <!--<li><a href="javascript:;">Action</a></li>-->
+                    <!--<li><a href="javascript:;">Another action</a></li>-->
+                    <!--<li><a href="javascript:;">Something else here</a></li>-->
+                <!--</ul>-->
+            <!--</dd>-->
+        </dl>
+
+        <dl class="scope">
+            <dt id="scope">资金范围</dt>
+            <dd class="all"><a href="javascript:;" class="active">全部</a></dd>
+            <dd class="one"><a href="javascript:;">1万以下</a></dd>
+            <dd class="two"><a href="javascript:;">1万～30万</a></dd>
+            <dd class="three"><a href="javascript:;">30万～100万</a></dd>
+            <dd class="four"><a href="javascript:;">100万以上</a></dd>
+        </dl>
+    </div>
+    <div class="col-lg-2 col-md-2"></div>
+    <div class="collect col-lg-3 col-md-3" >
+        <div class="collect_cont">
+            <div class="clearfix">
+                <div class="collect_left col-lg-6 col-md-6">
+                    <p class="total_choose">已选<span id="total_num">0</span>项</p>
+                    <p class="total_mny">折合美元<span id="total_my">$0</span></p>
+                </div>
+                <div class="collect_right col-lg-6 col-md-6">
+                    <p class="total_rmb">折合人名币<br /><span class="rmb"><strong id="total_Rmb">￥0</strong>元</span></p>
+                </div>
+            </div>
 
 
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+            <div class="buttons">
+                <button type="button" class="btn btn-default reject">
+                    驳回
+                </button>
+                <button type="button" class="btn btn-default consent">
+                    同意
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--    表格  -->
+<div id="tables"></div>
+
+<!--   上次审批记录-->
+<div id="table_records">
+
+</div>
+
+<!-- 审批记录按钮 -->
+<div id="buttons">
+    <button type="button" class="btn btn-info">上次审批记录</button>
+</div>
+<!-- 模态框模拟点击-->
+<button class="btn btn-primary btn-lg hidden" id="modelBtn" data-toggle="modal" data-target="#myModal">
+
+</button>
+<!--    模态框内容 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    模态框（Modal）标题
+                </h4>
+            </div>
+            <div class="modal-body">
+                在这里添加一些文本
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
 </body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="../js/jquery.dataTables.js"></script>
+<script src="../js/dataTables.material.js"></script>
+<script src="../js/faskclick.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/index.js"></script>
 </html>
